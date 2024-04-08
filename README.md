@@ -3,13 +3,22 @@ Creación de un pequeño compilador
 
 
 # Tarea Semana 7
-
 Leer Capítulo 7 del Libro Compiladores, Principios, Técnicas.
 
 Tarea de investigación sobre el entorno de ejecución en los compiladores. Esta tarea debe ser subida en formato PDF a la plataforma antes del Domingo a las 12:00 am.  
 
-# Ejercicios y Presentación con los demás compañeros:
+Recordar que todo debe ser con sus palabras. Tarea con Plagio tendra 0 de calificación automáticamente
 
+# Investigar
+- Entorno de Ejecución
+- Organización de la memoria en tiempo de ejecución.
+- Estrategias de asignación de memoria.
+- Acceso a variables locales, no locales y globales.
+- Paso de parámetros.
+
+
+
+# Ejercicios y Presentación con los demás compañeros:
 1)    Crear un pequeño Compilador con las siguientes características:
 
       a.    Analizador Léxico.
