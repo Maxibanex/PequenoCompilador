@@ -2,11 +2,13 @@
 Creación de un pequeño compilador
 
 
-# Tarea Semana 5
+# Tarea Semana 7
 
-Leer Capítulo 5 del Libro Compiladores, Principios, Técnicas y exponer en clases
+Leer Capítulo 7 del Libro Compiladores, Principios, Técnicas.
 
-#Ejercicios y Presentación con los demás compañeros:
+Tarea de investigación sobre el entorno de ejecución en los compiladores. Esta tarea debe ser subida en formato PDF a la plataforma antes del Domingo a las 12:00 am.  
+
+# Ejercicios y Presentación con los demás compañeros:
 
 1)    Crear un pequeño Compilador con las siguientes características:
 
