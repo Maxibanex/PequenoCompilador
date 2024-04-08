@@ -1,4 +1,4 @@
-# PequenoCompilador
+# Pequeño Compilador
 Creación de un pequeño compilador
 
 
