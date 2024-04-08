@@ -40,14 +40,6 @@ Recordar que todo debe ser con sus palabras. Tarea con Plagio tendra 0 de califi
 3)    Subir el código a Github, enviar el código fuente y el ejecutable del proyecto.
 
 
-# Detecciones actuales del Analizador Semántico
-- Si se declara una variable fuera de main.
-- Si se declara una variable más de una vez en el mismo ambito.
-- Si se le añade un tipo de dato que no le corresponde a una variable (solo funciona int, float o double).
-- Si una variable no ha sido declarada.
-
-
-
 # Código para prueba
 int main() {  
   int a = 0;  
