@@ -386,6 +386,7 @@ public class frmPantalla extends javax.swing.JFrame {
                     break;
                 case String_lit:
                     tamano = traducido.length();
+                    
                     if (tamano >= 5 && 
                         Character.toLowerCase(traducido.charAt(tamano - 7)) == 'p' &&
                         Character.toLowerCase(traducido.charAt(tamano - 6)) == 'r' &&
@@ -395,7 +396,13 @@ public class frmPantalla extends javax.swing.JFrame {
                         Character.toLowerCase(traducido.charAt(tamano - 2)) == 'f') {
                       // Penultimate character is part of "printf" (case-insensitive)
                       traducido += lexer.lexeme + " ";
-                      traducido += ", ";
+                      Tokens siguienteToken = lexer.yylex();
+                      if (siguienteToken != null && siguienteToken == Tokens.Identificador){
+                        traducido += ", " + lexer.lexeme;
+                      }else{
+                          traducido += lexer.lexeme + " ";
+                      }
+                      
                     } else {
                       traducido += lexer.lexeme + " ";
                     }
