@@ -19,7 +19,7 @@ terminal Linea, Comillas, T_dato, Int, Cadena, If, Else, Do, While, For,
     Igual, Suma, Resta, Multiplicacion, Division, Op_logico, Op_relacional,
     Op_atribucion, Op_incremento, Op_booleano, Parentesis_a, Parentesis_c,
     Llave_a, Llave_c, Corchete_a, Corchete_c, Main, P_coma, Identificador,
-    Numero, NumeroDecimal, Print, String_lit, ERROR;
+    Numero, NumeroDecimal, Print, String_lit, Mod, ERROR;
 non terminal INICIO, SENTENCIA, DECLARACION, DECLARACION_FOR, IF, IF_ELSE,
     WHILE, DO_WHILE, FOR, SENTENCIA_BOOLEANA, SENTENCIA_FOR;
 
@@ -71,6 +71,16 @@ DECLARACION ::=
     Identificador Op_atribucion Identificador P_coma |
     Identificador Igual Identificador P_coma |
     Identificador Igual String_lit P_coma |
+    Identificador Igual Identificador Suma Identificador P_coma |
+    Identificador Igual Identificador Multiplicacion Identificador P_coma |
+    Identificador Igual Identificador Division Identificador P_coma |
+    Identificador Igual Identificador Resta Identificador P_coma |
+    Identificador Igual Identificador Mod Identificador P_coma |
+    Identificador Igual Identificador Suma Numero P_coma |
+    Identificador Igual Identificador Multiplicacion Numero P_coma |
+    Identificador Igual Identificador Division Numero P_coma |
+    Identificador Igual Identificador Resta Numero P_coma |
+    Identificador Igual Identificador Mod Numero P_coma |
     Print Parentesis_a Identificador Parentesis_c P_coma |
     Print Parentesis_a String_lit Parentesis_c P_coma |
     Print Parentesis_a String_lit Identificador Parentesis_c P_coma

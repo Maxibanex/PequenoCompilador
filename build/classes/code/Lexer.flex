@@ -59,6 +59,9 @@ espacio=[ ,\t,\r]+
 /* Operador Division */
 ( "/" ) {lexeme=yytext(); return Division;}
 
+/* Operador Mod */
+( "%" ) {lexeme=yytext(); return Mod;}
+
 /* Operadores logicos */
 ( "&&" | "||" | "!" | "&" | "|" ) {lexeme=yytext(); return Op_logico;}
 

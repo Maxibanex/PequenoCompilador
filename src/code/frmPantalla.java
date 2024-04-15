@@ -235,6 +235,9 @@ public class frmPantalla extends javax.swing.JFrame {
                 case NumeroDecimal:
                     intermedio += lexer.lexeme + " ";
                     break;
+                case Print:
+                    intermedio += "Printf ";
+                    break;
                 case String_lit:
                     intermedio += lexer.lexeme + " ";
                     break;
@@ -318,6 +321,9 @@ public class frmPantalla extends javax.swing.JFrame {
                     traducido += lexer.lexeme + " ";
                     break;
                 case Division:
+                    traducido += lexer.lexeme + " ";
+                    break;
+                case Mod:
                     traducido += lexer.lexeme + " ";
                     break;
                 case Op_logico:
@@ -680,6 +686,9 @@ public class frmPantalla extends javax.swing.JFrame {
                     break;
                 case Division:
                     resultado += "  Operador division\t" + lexer.lexeme + "\n";
+                    break;
+                case Mod:
+                    resultado += "  Operador mod\t\t" + lexer.lexeme + "\n";
                     break;
                 case Op_logico:
                     resultado += "  Operador logico\t" + lexer.lexeme + "\n";

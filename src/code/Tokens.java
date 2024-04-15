@@ -23,6 +23,7 @@ public enum Tokens {
     Resta,
     Multiplicacion,
     Division,
+    Mod,
     Op_logico,
     Op_incremento,
     Op_relacional,

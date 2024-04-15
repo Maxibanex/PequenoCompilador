@@ -68,6 +68,9 @@ espacio=[ ,\t,\r,\n]+
 /* Operador Division */
 ( "/" ) {return new Symbol(sym.Division, yychar, yyline, yytext());}
 
+/* Operador Mod */
+( "%" ) {return new Symbol(sym.Mod, yychar, yyline, yytext());}
+
 /* Operadores logicos */
 ( "&&" | "||" | "!" | "&" | "|" ) {return new Symbol(sym.Op_logico, yychar, yyline, yytext());}
 
