@@ -41,14 +41,14 @@ Recordar que todo debe ser con sus palabras. Tarea con Plagio tendra 0 de califi
 
 
 # Código para prueba
-int main() {  
-  int a = 0;  
-  int i = 0.5; // debe dar error porque es entero  
-  float p = 0.5;  
-  int d = 0;  
-  int d=0; //debe dar error porque ya fue declarada  
+entero principal() {  
+  entero a = 0;  
+  entero i = 0.5; // debe dar error porque es entero  
+  decimal p = 0.5;  
+  entero d = 0;  
+  entero d=0; //debe dar error porque ya fue declarada  
   
-  for (a = 0; a < 3; a++) {  
+  para (a = 0; a < 3; a++) {  
     i++;  
     d = i;  
   }  
